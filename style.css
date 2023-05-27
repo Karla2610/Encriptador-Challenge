@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: seashell;
+    line-height: 150%;
+}
+
+body{
+    background-image: radial-gradient(circle at 1.76% 22.15%, #1c3435 0, #182a29 16.67%, #121b1a 33.33%, #000000 50%, #000000 66.67%, #000000 83.33%, #000000 100%);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    width: auto;
+    height: 50px;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: space-between;
+}
+
+.seccion1{
+    width: 40px;
+    height: 100%;
+}
+
+.contenedor_caja_texto{
+    display: flex;
+    left: 200px;
+    top: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 742px;
+    height: 655px;
+}
+
+.area_texto{
+    position: relative;
+    width: 740px;
+    height: 65%;
+    border: none;
+    border-radius: 24px;
+    background-image: radial-gradient(circle at 1.76% 22.15%, #1c3435 0, #182a29 16.67%, #121b1a 33.33%, #000000 50%, #000000 66.67%, #000000 83.33%, #000000 100%);
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: seashell;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.area_texto::placeholder{color: #4d5052;}
+    .area_texto:focus {
+        outline: none;
+    }
+
+.alerta{
+    position: absolute;
+    top: 516px;
+    left: 70px;
+    display: flex;
+    color: seashell;
+    font-size: 12px;
+}
+
+.contenedor-botones{
+    position: absolute;
+    top: 528px;
+    height: 80px;
+    padding-left: 3%;
+    padding-top: 15px;
+}
+
+.btn-encriptar{
+    width: 250px;
+    height: 56px;
+    border-radius: 24px;
+    background-image: linear-gradient(155deg, #005da3 0, #005dae 5.56%, #005bb7 11.11%, #0059be 16.67%, #0056c2 22.22%, #0053c5 27.78%, #004ec4 33.33%, #0048c2 38.89%, #0041bc 44.44%, #1838b5 50%, #4c2dac 55.56%, #681da0 61.11%, #7c0093 66.67%, #8b0085 72.22%, #970076 77.78%, #a00067 83.33%, #a60057 88.89%, #a90047 94.44%, #aa0038 100%);
+    color: seashell;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-right: 45px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    left: 19px;
+}
+
+.btn-encriptar:hover{
+    background-image: linear-gradient(155deg, #a5eee2 0, #90e7df 12.5%, #76dedd 25%, #56d5db 37.5%, #20cbd9 50%, #00c1d8 62.5%, #00b7d9 75%, #00adda 87.5%, #00a4dc 100%);
+    transform: scale(1.2);
+    color: #000000;
+}
+
+.btn-desencriptar{
+    width: 250px;
+    height: 56px;
+    border-radius: 24px;
+    background-image: linear-gradient(155deg, #005da3 0, #005dae 5.56%, #005bb7 11.11%, #0059be 16.67%, #0056c2 22.22%, #0053c5 27.78%, #004ec4 33.33%, #0048c2 38.89%, #0041bc 44.44%, #1838b5 50%, #4c2dac 55.56%, #681da0 61.11%, #7c0093 66.67%, #8b0085 72.22%, #970076 77.78%, #a00067 83.33%, #a60057 88.89%, #a90047 94.44%, #aa0038 100%);
+    cursor: pointer;
+    color: seashell;
+    font-size: 16PX;
+    font-weight: bold;
+    border: 1PX SOLID #0A3B71;
+    position: relative;
+    bottom: 10px;
+}
+
+.btn-desencriptar:hover{
+    background-image: linear-gradient(155deg, #a5eee2 0, #90e7df 12.5%, #76dedd 25%, #56d5db 37.5%, #20cbd9 50%, #00c1d8 62.5%, #00b7d9 75%, #00adda 87.5%, #00a4dc 100%);
+    transform: scale(1.2);
+    color: #000000;
+}
+
+.texto-resultado{
+    background-origin: content-box;
+    background-image: url(Imagenes/BMO.png);
+    background-position-y: top;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: skyblue;
+    margin-left: -533px;
+    margin-top: 9px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    height: 545px;
+    width: 377px;
+    background-color: #1c3435;
+    text-transform: lowercase;
+    text-align: center;
+}
+.texto-resultado:focus{
+    outline: none;
+}
+.texto-resultado::placeholder{
+    text-align: center;
+    font-size: 25px;
+    color: #4d5052;
+    line-height: 100px;
+    height: 25px;
+    padding-top: 357px;
+}
+
+
+.contenedor-copiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 566px;
+    left: 841px;
+    padding-left: 50px;
+}
+
+.btn-Copiar{
+    width: 250px;
+    height: 60px;
+    border-radius: 24px;
+    background-image: linear-gradient(155deg, #005da3 0, #005dae 5.56%, #005bb7 11.11%, #0059be 16.67%, #0056c2 22.22%, #0053c5 27.78%, #004ec4 33.33%, #0048c2 38.89%, #0041bc 44.44%, #1838b5 50%, #4c2dac 55.56%, #681da0 61.11%, #7c0093 66.67%, #8b0085 72.22%, #970076 77.78%, #a00067 83.33%, #a60057 88.89%, #a90047 94.44%, #aa0038 100%);
+    color: seashell;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #0A3B71;
+    cursor: pointer;
+    position: relative;
+    top: -26px;
+    right: 4px;
+    left: -21px;
+}
+
+.btn-Copiar:hover{
+    background-image: linear-gradient(155deg, #a5eee2 0, #90e7df 12.5%, #76dedd 25%, #56d5db 37.5%, #20cbd9 50%, #00c1d8 62.5%, #00b7d9 75%, #00adda 87.5%, #00a4dc 100%);
+    transform: scale(1.2);
+    color: #000000;
+}
+
+
+footer{
+    text-align: center;
+    padding: 0px;
+}
+.social-media{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 1px;
+}
+.linkedin{
+    width: 36px;
+    height: 33px;
+    margin-left: -923px;
+}
+.imagen-red-social{
+    height: 33px;
+    width: 36px;
+}
+
+.copyright{
+    color: seashell;
+    font-size: 13px;
+    margin: 20px;
+    margin-top: auto;
+    text-align: left;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+      height: 50px;
+    }
+    body{
+        background: #360033; 
+        background:-webkit-linear-gradient(to right, #0b8793, #360033);
+        background:linear-gradient(to right, #0b8793, #360033);
+    }
+  
+    .logo {
+      height: 24px;
+      padding-top: 10px;
+      margin-left: 20px;
+    }
+  
+    main {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .contenedor_caja_texto {
+      left: 0;
+      top: 0;
+      padding: 10px;
+      width: 334px;
+      height: auto;
+      padding-top: 0px;
+    }
+  
+    .area_texto {
+      width: 331px;
+      height: 241px;
+      font-size: 19px;
+      background: #283c86;
+      background:-webkit-linear-gradient(to right, #45a247, #283c86);
+      background: linear-gradient(to right, #45a247, #283c86);
+
+    }
+  
+    .alerta {
+      top: auto;
+      bottom: 600px;
+      left: 36px;
+      font-size: 11px;
+    }
+  
+    .contenedor-botones {
+      position: static;
+      margin-top: 10px;
+      padding-left: 16px;
+      padding-top: 13px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 293px;
+      height: 57px;
+    }
+  
+    .btn-encriptar,
+    .btn-desencriptar {
+      width: 123px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      height: 36px;
+      margin-top: 12px;
+      background: #1A2980; 
+      background:-webkit-linear-gradient(to right, #26D0CE, #1A2980); 
+      background: linear-gradient(to right, #26D0CE, #1A2980);
+    }
+  
+    .contenedor-resultado {
+      width: 100%;
+      height: auto;
+      padding-left: 22px;
+      padding-right: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .texto-resultado {
+      margin-left: 15px;
+      margin-top: 4px;
+      padding-left: 10px;
+      font-size: 19px;
+      height: 271px;
+      width: 295px;
+      position: static;
+      background-image: none;
+      background: #283c86;
+      background:-webkit-linear-gradient(to right, #45a247, #283c86);
+      background: linear-gradient(to right, #45a247, #283c86);
+    }
+  
+    .texto-resultado::placeholder {
+      padding-top: 10px;
+      font-size: 19px;
+      top: 20px;
+    }
+  
+    .contenedor-copiar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        left: 80px;
+        width: 188px;
+        height: 60px;
+        padding: 0px;
+    }
+  
+    .btn-Copiar {
+        width: 35%;
+        margin-bottom: 2px;
+        font-size: 13px;
+        height: 35px;
+        left: 93px;
+        margin-top: 613px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #1A2980; 
+        background:-webkit-linear-gradient(to right, #26D0CE, #1A2980); 
+        background: linear-gradient(to right, #26D0CE, #1A2980);
+    }
+  
+    footer {
+      text-align: center;
+      padding: 0px;
+      position: relative;
+      top: 60px;
+    }
+  
+    .linkedin {
+      margin-left: -65px;
+      height: 40px;
+      width: 40px;
+    }
+  
+    .imagen-red-social {
+      height: 37px;
+      width: 35px;
+    }
+
+}
+  
